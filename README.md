@@ -3,13 +3,13 @@ Project Description
 The string similarity project designs and implements new string similarity metrics and efficient algorithms to obtain them. Given any two strings, the program (tool) in this open source returns various percentile metrics showing how similar the two strings are.
 The current version of this project has implementations of the following six new and one existing (common) string similarity metrics. 
 
-1. `Compute-Distance Metric`: Compute-distance metric is based on length of the longest matching subsequence group and length of longest of the two input strings.
+1. `Compute-Distance Metric`: Compute-distance metric is based on length of the longest matching subsequence group (where matching characters are not necessarily consecutive) and length of longest of the two input strings.
 
 2. `Weighted Compute-Distance Metric`:  Weighted compute-distance metric is based on the longest matching subsequence group and a weighted average of lengths of the longest and shortest strings.
 
 3. `Weighted Similarity Metric (Subsequences based)`: This metric is based on lengths of all matching subsequence groups and lengths of the two strings.
 
-4. `Weighted Similarity Metric (Substrings based)`: This metric is based on lengths of all matching substring groups and lengths of the two strings.
+4. `Weighted Similarity Metric (Substrings based)`: This metric is based on lengths of all matching substring groups (where matching characters are consecutive) and lengths of the two strings.
 
 5. `Square Root Similarity Metric`: The square root similarity metric is based on sizes of all matching subsequence groups and weighted lengths of the two strings.
 
@@ -44,7 +44,7 @@ To address the shortcomings of existing string similarity algorithms we have rec
 
 The worst and average case computational complexity of our algorithms is lower than well-known algorithms used to compute existing string similarity metrics such as edit-distance and LCS. 
 
-The computational complexity of our algorithms to obtain the above metrics is the sum of the products of the number of repeated and matching characters in each string. If the number of repetitions of character `i` in the first string is `ni` and in the second string is `mi` , then the worst case order complexity is the sum of `ni*mi` over `N`, where `N` is the number of unique characters which appear in both the first and second string. We also have `N > 3` as there are simpler algorithms to obtain the compute distances when `N < 4`. This worst case computational complexity is less than that of the most commonly used edit-distance algorithm which is `O(nm)` where `n` and `m` are lengths of the first and second strings. For instance, if string1 and string2 both have length of 10, and if we have 2a, 3d, 5g in string1 and 3a, 3d, 4g in string2, the worst-case complexity is not 10x10 = 100. It is 2x3 + 3x3 + 5x4 = 35. As not every character in one string always appears in the second string, the average computational complexity of average strings is actually much less than this.
+The computational complexity of our algorithms to obtain the above metrics is the sum of the products of the number of repeated and matching characters in each string. If the number of repetitions of character `i` in the first string is `ni` and in the second string is `mi` , then the worst case order complexity is the sum of `ni*mi` over `N`, where `N` is the number of unique characters which appear in both the first and second string. We also have `N > 3` as there are simpler algorithms to obtain the sizes of the groups when `N < 4`. This worst case computational complexity is less than that of the most commonly used edit-distance algorithm which is `O(nm)` where `n` and `m` are lengths of the first and second strings. For instance, if string1 and string2 both have length of 10, and if we have 2 a, 3 d, 5 g in string1 and 3 a, 3 d, 4 g in string2, the worst-case complexity is not 10x10 = 100. It is 2x3 + 3x3 + 5x4 = 35. As not every character in one string always appears in the second string, the average computational complexity of most strings is actually much less than this.
 
 If string1 and string2 are non-repetitive strings with every character appearing at most once in each string, the complexity reduces to the maximum of `O(N)`, `O(n)` and  `O(m)`. This is because `ni` and `mi` each has the value of 1 in this case, as the characters do not repeat.
 
