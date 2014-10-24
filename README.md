@@ -75,9 +75,9 @@ Weighted Sum Similarity Metric
 ==============================
 This metric is obtained by summing up the size of the longest parallel group and a function of the lengths of all other groups of parallel lines as well as the lengths of the longest and shortest strings.
 
-The weighted similarity metrics are very strict metrics. A higher such metric value means the two strings are similar.
+The weighted similarity metrics are very strict (conservative) metrics. A higher such metric value means the two strings are highly similar.
 
-The square root as well as the weighted sum metrics on the other hand are less strict. A higher such metric value means that there are more matching characters than the strings are more similar.  If one wants a higher percentage representing higher similarity, these metrics are useful.
+The square root as well as the weighted sum metrics on the other hand are less strict (less conservative). A higher such metric value means that there are more matching characters than meaning the strings are more similar.  If one wants a higher percentage representing higher similarity, these metrics are useful.
 
 
 Program Usage
