@@ -30,9 +30,9 @@ using namespace std;
 // The main function starts the string similarity program.
 // It takes two files as inputs.
 // The first file consists of the pairs of strings whose
-// string similarity values are obtained by the computeMetrics
+// string similarity values are to be obtained by the computeMetrics
 // string similarity program.
-// The output file is generated after the program finishes running.
+// The output file is filled with program output after the program finishes running.
 // The output file consists of the pairs of strings to be compared and
 // their corresponding string similarity score values
 //
