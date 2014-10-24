@@ -39,7 +39,7 @@ using namespace std;
 
 // This countGroupCommonChars function updates the number of
 // characters common to multiple sub sequence groups
-// by increamenting the the numCommonChars variable in
+// by increamenting the numCommonChars variable in
 // the strMetVariable structure.
 //
 // If it is the first call of the computeStrMetricHelper function
