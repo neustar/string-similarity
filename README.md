@@ -7,13 +7,13 @@ The current version of this project has implementations of the following six new
 
 2. `Weighted Compute-Distance Metric`:  Weighted compute-distance metric is based on the longest matching subsequence group and a weighted average of lengths of the longest and shortest strings.
 
-3. `Weighted Similarity Metric (Subsequences based)`: This metric is based on lengths of all subsequences and lengths of the two strings.
+3. `Weighted Similarity Metric (Subsequences based)`: This metric is based on lengths of all matching subsequence groups and lengths of the two strings.
 
-4. `Weighted Similarity Metric (Substrings based)`: This metric is based on lengths of all substrings and lengths of the two strings.
+4. `Weighted Similarity Metric (Substrings based)`: This metric is based on lengths of all matching substring groups and lengths of the two strings.
 
-5. `Square Root Similarity Metric`: The square root similarity metric is based on sizes of all subsequences and weighted lengths of the two strings.
+5. `Square Root Similarity Metric`: The square root similarity metric is based on sizes of all matching subsequence groups and weighted lengths of the two strings.
 
-6. `Weighted Sum Similarity Metric`: Weighted sum similarity metric is based on size of longest subsequence, sizes of all other subsequences and weighted average of lengths of the two strings.
+6. `Weighted Sum Similarity Metric`: Weighted sum similarity metric is based on length of longest subsequence group, sizes of all other subsequence groups and weighted average of lengths of the two strings.
 
 7. The `String Match Ratio`: This is a commonly known metric, which obtains the ratio of matching characters of two strings to the weighted average of the lengths of the two strings.
 
