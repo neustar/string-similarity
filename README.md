@@ -20,9 +20,9 @@ The current version of this project has implementations of the following six new
 
 Algorithms
 ==========
-The algorithm to compute the above metrics first generates groups of parallel lines where each line is from a character in one string to the matching character in the second string. 
+The algorithm to compute the above metrics first generates (substring and subsequence) groups of parallel lines where each line is from a character in one string to the matching character in the second string. 
 
-The algorithm then maintains the groups and their corresponding numbers of parallel lines (size) along with the group with highest number of lines.
+The algorithm then maintains such subsequence and substring groups and their corresponding numbers of parallel lines (size) along with the group with highest number of parallel lines. 
 
 Each of the the string metrics above is then obtained as a function of the sizes of the groups, and the length of the longer and shorter strings. 
 
