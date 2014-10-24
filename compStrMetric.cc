@@ -97,11 +97,11 @@ void countGroupCommonChars(int i, bool (& isVisitedChar)[2][MAXSTRLEN], bool sec
 //
 // These counts are used to accumulate the sSeqSquaresSumNew and
 // sStrSquaresSumNew values in the strMetVariable structure used to
-// to calculate the subsequence and substring based string similarity metrics
+// to calculate the subsequence and substring based string similarity metrics.
 //
 // This computeStrMetricHelper also maintains the highestSseqGrpSizeNew
 // variable of the strMetVariablem structure which is used
-// to calculate the compute distance based string similarity metrics
+// to calculate the compute distance based string similarity metrics.
 //
 // To count the number of characters which occur in multiple groups, this
 // computeStrMetricHelper function also calls
@@ -211,15 +211,15 @@ void computeMetricPercents(strMetricStruct & strMetricStructReturn, strMetricVar
 }
 
 // A function which takes a pair of strings as input and returns
-// their string similarity vaues (metrics) as output
-// The metric value is displayed in the form percentage
+// their string similarity vaues (metrics) as output.
+// The metric value is displayed in the form of percentages.
 //
 // This function calls the computeStrMetricHelper function twice.
 //
 // In the first call, the function updates the subsquence and
 // substring group counts as well as the strMetVariable
 // variables (See compStrMetric.h for detailed description).
-// To do this the function for this call loops for a single
+// To do this the function for this call, loops for a single
 // character in string 1 to every matching characters
 // in string 2 visited so far.
 //
@@ -230,7 +230,7 @@ void computeMetricPercents(strMetricStruct & strMetricStructReturn, strMetricVar
 // The flag, visitedChar, showing whether or not the character i
 // is previously matched,
 // The strMetVariable structure consisting of variables used to
-// calculate the string metric values
+// calculate the string metric values,
 // The secondCall flag showing whether or not it is the first
 // call of the function, computeStrMetricHelper.
 //
