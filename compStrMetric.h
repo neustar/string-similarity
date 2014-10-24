@@ -94,8 +94,8 @@ class subStringStruct{
         // group(same incline)
         int cntr;
         // List of characters in the substring
-        // Initialize the substring variables
         list <int> subStrList;
+        // Initialize the substring variables
         subStringStruct(){
             cntr = 0;
             subStrList.empty();
