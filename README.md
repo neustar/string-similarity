@@ -63,6 +63,8 @@ As mentioned above, the none-weighted compute distance metric is obtained by sub
 
 The weighted compute distance on the other hand uses both lengths of the shorter and longer strings. This is particularly useful with name matching such as finding the similarity between the name DEBISH FESEHAYE and DEBISH FESEHAYE K, which are essentially the same names. In this case giving more weight to the shorter string DEBISH FESEHAYE shows perfect similarity score.
 
+A patent with a Docket No. A208679 on the compute distance metric and associated algorithms is also filed by Neustar Inc. 
+
 The Weighted Similarity Metrics
 ===============================
 The subsequence and substring based weighted string similarity metrics are obtained by using the sizes of each subsequence and substring (respectively) along with the sizes of the longest and shortest strings.
