@@ -122,8 +122,7 @@ License
 This tool is made available under the Apache License, Version 2.0 (see [1] for details).
 
 
-[1] http://www.apache.org/licenses/LICENSE-2.0.html
-
+[1] http://www.apache.org/licenses/LICENSE-2.0.html...
 [2] http://www.ssa.gov/cgi-bin/popularnames.cgi
 
 
