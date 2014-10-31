@@ -3,7 +3,6 @@ CC = g++
 DEBUG = -g
 CFLAGS = -Wall -c $(DEBUG)
 LFLAGS = -Wall $(DEBUG)
-
 computeMetrics : $(OBJS)
 	$(CC) $(LFLAGS) $(OBJS) -o computeMetrics
 compStrMetricMain.o : compStrMetric.h compStrMetricMain.cc
