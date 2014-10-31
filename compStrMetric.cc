@@ -318,4 +318,3 @@ strMetricStruct computeStrMetric(char* argv[]) {
     computeMetricPercents(strMetricStructReturn, strMetVariable, strLength, minLength);
     return strMetricStructReturn;
 }
-
