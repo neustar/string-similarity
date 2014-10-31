@@ -131,3 +131,4 @@ class subSequenceStruct{
 strMetricStruct computeStrMetric(char* argv[]);
 
 #endif  // COMPSTRMETRIC_H_
+
