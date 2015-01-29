@@ -24,7 +24,7 @@ The algorithm to compute the above metrics first generates (substring and subseq
 
 The algorithm then maintains such subsequence and substring groups and their corresponding numbers of parallel lines (size) along with the group with highest number of parallel lines. 
 
-Each of the the string metrics above is then obtained as a function of the sizes of the groups, and the length of the longer and shorter strings. 
+Each of the string metrics above is then obtained as a function of the sizes of the groups, and the length of the longer and shorter strings. 
 
 For instance we set a metric to be directly proportional to the number of groups and the weighted average of the sizes of the groups and inversely proportional to the length of the longest string to obtain the `weighted similarity metric`. This is because, the more matching groups and the larger the average size of such groups relative to the string size, the more similar the strings are.
  
