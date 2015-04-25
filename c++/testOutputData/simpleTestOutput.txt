@@ -1,0 +1,5 @@
+string1                                    string2                                compDistPerc wcompDistPerc sseqWsPerc  sstrWsPerc sqrtsseqWsPerc wsumsseqWsPerc     matchRatio  
+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+DEBISH,FESEHAYE                          FESEHAYE,DEBISH                          53.333333    53.333333    56.444444    52.888889    75.129518     66.881720     100.000000   
+FESEHA,DEB                               DEBI,FESUH                               40.000000    40.000000    36.000000    24.000000    60.000000     56.666667     80.000000    
+DEBESSAY,FESEHAYE                        DEBESSAY,FESEHAYE,K                      89.473684    97.701149    100.000000   100.000000   100.000000    100.000000    94.736842    
